@@ -1,0 +1,13 @@
+body {
+	background-color: #000000;
+	color: #00cc00;
+}
+
+p {
+	font-family: monospace;
+    font-size: 19px;
+}
+
+em {
+	font-weight: bold; /* Ponemos en énfasis en negrita */
+}

@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <title>
-        Colores
-    </title>
-    <header>
+    
+    <head>
         <h1>
-            Colores practica 1
-            <hr>
+            Página sencilla para decirar con estilos
+            <link id="estilo" rel="stylesheet" type="text/css" href="default.css">
         </h1>
-    </header>
-    <main>
-        contenido de colores
-    </main>
+    </head>
+    <body>
+        <p>
+            Este es el primer párrafo, que no tiene nada especial
+        </p>
+        <p>
+          <h2>
+            Esto es un titulo de segundo nivel
+          </h2>
+          Que tiene dentro un párrafo con <em>un fragmento enfatizado</em>
+        </p>
+        <p>
+            <h3>
+                Esto es un titulo de tercer nivel
+            </h3>
+            El tercer párrafo tampoco tiene nada de especial
+        </p>
+        <p>
+            <button onclick="cambiarCSS('verde.css')"> verde </button>
+            <button onclick="cambiarCSS('marron.css')"> marron </button>
+            <button onclick="cambiarCSS('consola.css')"> consola </button>
+            <script>
+                function cambiarCSS(nuevo){
+                    document.getElementById('estilo').setAttribute('href', nuevo);
+                }
+            </script>
+        </p>
+    </body>
 </html>
